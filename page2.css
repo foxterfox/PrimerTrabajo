@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --myBlue: #4E9CF8;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--myBlue);
+    height: 350px;
+    width: 100%;
+}
+
+.board {
+    height: 550px;
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: #bbbbbb 5px 5px 40px;
+    padding: 40px 0;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    position: absolute;
+}
+
+
+/* ############# BOARD CONTENT ############# */
+
+.board__content {
+    width: 33%;
+    padding: 0 40px;
+}
+
+.border__content--lateral {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.board__img {
+    width: 60%;
+    height: 20%;
+    margin: 20px auto;
+}
+
+.board__plan {
+    color: #9C908C;
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+}
+
+.board__info {
+    color: var(--myBlue);
+    font-size: 0.7rem;
+    padding: 15px 5px;
+    border-top: 1px solid #ddd;
+}
+
+.board__info--bottomline {
+    border-bottom: 1px solid #ddd;
+}
+
+.board__price {
+    display: block;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #2093FA;
+}
+
+.board__button {
+    text-decoration: none;
+    color: white;
+    margin: 20px auto;
+    width: 140px;
+    padding: 10px;
+    background-color: var(--myBlue);
+    border-radius: 8px;
+    display: block;
+}
+
+.board__button:hover {
+    background-color: white;
+    color: var(--myBlue);
+}
+
+.board__button--signup {
+    color: var(--myBlue);
+    background-color: #E1F1FF;
+    border: 1px solid var(--myBlue);
+}
+
+
+/* ############## HOME ################# */
+
+.main__home {
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 2rem;
+}

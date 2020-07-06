@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --myBackground: #02E37F;
+    --myGreenCard: #B4E93C;
+    --myFont: font-family: 'Hind Madurai', sans-serif;
+}
+
+body {
+    background-color: var(--myBackground);
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: c;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main {
+    margin: 140px auto;
+    background-color: white;
+    border-radius: 5px;
+    width: 550px;
+    height: 450px;
+    position: relative;
+}
+
+
+/* ################################################ */
+
+
+/* ################  CARD IMAGEN ################## */
+
+
+/* ################################################ */
+
+.card__imagen {
+    background-color: var(--myGreenCard);
+    border-radius: 5px;
+    width: 42%;
+    height: 85%;
+    position: absolute;
+    left: -8%;
+    top: 50%;
+    transform: translate(0, -50%);
+    box-shadow: rgb(153, 152, 152) 5px 5px 20px;
+}
+
+.card__imagen img {
+    position: absolute;
+    left: -20%;
+    top: 8%;
+    width: 250px;
+    height: 250px;
+}
+
+.card__icon {
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+.icon--topleft {
+    top: 10px;
+    left: 10px;
+}
+
+.icon--topright {
+    top: 10px;
+    right: 10px;
+}
+
+.card__gallery {
+    position: absolute;
+    height: 60px;
+    background: white;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+}
+
+.card__photogallery {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: 1px solid #bbb;
+    display: inline-block;
+    position: relative;
+}
+
+.card__photogallery img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.card__photogallery:hover img {
+    scale: 1.2;
+}
+
+
+/* ################################################ */
+
+
+/* ################  CARD DATA ################## */
+
+
+/* ################################################ */
+
+.card__data {
+    width: 55%;
+    height: 80%;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 5px 15px;
+}
+
+.card__subtitle {
+    color: #bbb;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: var(--myFont);
+}
+
+.card__price {
+    color: red;
+    margin: 15px 0;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+}
+
+.card__amount {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card__productColor {
+    margin: 15px 0;
+}
+
+.card__photogallery--min {
+    width: 25px;
+    height: 25px;
+    margin: 0 3px;
+    border: none;
+}
+
+.card__photogallery--min:hover img {
+    scale: 1;
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.card__listado li {
+    list-style-position: inside;
+    font-size: 0.8rem;
+}
+
+.card__button {
+    background-color: #FF3F40;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 30px;
+    width: 150px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: block;
+    box-shadow: #888 0px 0px 20px;
+}
+
+.card__button:hover {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+
+/* ################################################ */
+
+
+/* ################  HOME ################## */
+
+
+/* ################################################ */
+
+.main__home {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 2rem;
+}
